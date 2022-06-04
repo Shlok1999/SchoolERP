@@ -6,6 +6,11 @@ const app = expresss()
 
 let port = process.env.PORT || 4040
 
+app.get('/', (req, res)=>{
+    res.send('Hello')
+})
+
+
 app.listen(port, ()=>{
     console.log(`http://localhost:${port}`)
 })
